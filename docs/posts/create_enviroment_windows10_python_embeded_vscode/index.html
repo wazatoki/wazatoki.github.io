@@ -10,7 +10,19 @@
 
 
 
-    <meta name="description" content="scribbling block">
+    <meta name="description" content="配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。
+ダウンロード 下記のサイトよりダウンロードして適当なフォルダに展開します。
+https://www.python.org/downloads/windows/
+pipのインストール 下記のサイトよりget-pip.pyをダウンロードして展開したフォルダにコピーします。
+https://bootstrap.pypa.io/
+展開したフォルダ内にあるpython**._pthを編集してコメントアウトを外します。 **はバージョン番号。
+3.9だったらファイル名はpython39._pth
+ #import site → import site 展開したフォルダ内にあるpython.exeを使って下記を実行します。
+ .\python.exe get-pip.py visual studio codeの設定 以下のフォルダ構成を想定しています。
+&#43;-project_folder | &#43;-python*.*.*-embed-win32 | &#43;-src | &#43;-.env | &#43;-main.py | &#43;-pylintrc | &#43;-projectname.code-workspace File → Save Workspace Asと選択してフォルダにprojectname.code-workspaceを作成します。
+projectname.code-workspaceの内容を下記の内容に修正します。
+ { &quot;folders&quot;: [ { &quot;path&quot;: &quot;.&quot; } ], &quot;settings&quot;: { &quot;files.eol&quot;: &quot;\n&quot;, &quot;terminal.integrated.env.windows&quot;: { &quot;PATH&quot;: &quot;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32\\Scripts&quot; }, &quot;python.pythonPath&quot;: &quot;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32\\python.exe&quot; } } srcフォルダ内に.envファイルを作成して下記の内容を記載します。
+ PYTHON_PATH=../python-*.*.*-embed-win32 プロジェクトフォルダ直下にpylintrcファイルを作成して下記の内容を記載します。">
 
 
 
@@ -22,7 +34,7 @@
     
 
 
-    <title>Tags | scribbling block</title>
+    <title>windows10 &#43; python embeded &#43; visual studio code 環境作成 | scribbling block</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -30,15 +42,40 @@
 
     
 
-    <meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://wazatoki.github.io/tags/" />
-
+    <meta property="og:title" content="windows10 &#43; python embeded &#43; visual studio code 環境作成" />
+<meta property="og:description" content="配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。
+ダウンロード 下記のサイトよりダウンロードして適当なフォルダに展開します。
+https://www.python.org/downloads/windows/
+pipのインストール 下記のサイトよりget-pip.pyをダウンロードして展開したフォルダにコピーします。
+https://bootstrap.pypa.io/
+展開したフォルダ内にあるpython**._pthを編集してコメントアウトを外します。 **はバージョン番号。
+3.9だったらファイル名はpython39._pth
+ #import site → import site 展開したフォルダ内にあるpython.exeを使って下記を実行します。
+ .\python.exe get-pip.py visual studio codeの設定 以下のフォルダ構成を想定しています。
+&#43;-project_folder | &#43;-python*.*.*-embed-win32 | &#43;-src | &#43;-.env | &#43;-main.py | &#43;-pylintrc | &#43;-projectname.code-workspace File → Save Workspace Asと選択してフォルダにprojectname.code-workspaceを作成します。
+projectname.code-workspaceの内容を下記の内容に修正します。
+ { &quot;folders&quot;: [ { &quot;path&quot;: &quot;.&quot; } ], &quot;settings&quot;: { &quot;files.eol&quot;: &quot;\n&quot;, &quot;terminal.integrated.env.windows&quot;: { &quot;PATH&quot;: &quot;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32\\Scripts&quot; }, &quot;python.pythonPath&quot;: &quot;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32\\python.exe&quot; } } srcフォルダ内に.envファイルを作成して下記の内容を記載します。
+ PYTHON_PATH=../python-*.*.*-embed-win32 プロジェクトフォルダ直下にpylintrcファイルを作成して下記の内容を記載します。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://wazatoki.github.io/posts/create_enviroment_windows10_python_embeded_vscode/" />
+<meta property="article:published_time" content="2020-11-29T16:41:07+09:00" />
+<meta property="article:modified_time" content="2020-11-29T16:41:07+09:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="windows10 &#43; python embeded &#43; visual studio code 環境作成"/>
+<meta name="twitter:description" content="配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。
+ダウンロード 下記のサイトよりダウンロードして適当なフォルダに展開します。
+https://www.python.org/downloads/windows/
+pipのインストール 下記のサイトよりget-pip.pyをダウンロードして展開したフォルダにコピーします。
+https://bootstrap.pypa.io/
+展開したフォルダ内にあるpython**._pthを編集してコメントアウトを外します。 **はバージョン番号。
+3.9だったらファイル名はpython39._pth
+ #import site → import site 展開したフォルダ内にあるpython.exeを使って下記を実行します。
+ .\python.exe get-pip.py visual studio codeの設定 以下のフォルダ構成を想定しています。
+&#43;-project_folder | &#43;-python*.*.*-embed-win32 | &#43;-src | &#43;-.env | &#43;-main.py | &#43;-pylintrc | &#43;-projectname.code-workspace File → Save Workspace Asと選択してフォルダにprojectname.code-workspaceを作成します。
+projectname.code-workspaceの内容を下記の内容に修正します。
+ { &quot;folders&quot;: [ { &quot;path&quot;: &quot;.&quot; } ], &quot;settings&quot;: { &quot;files.eol&quot;: &quot;\n&quot;, &quot;terminal.integrated.env.windows&quot;: { &quot;PATH&quot;: &quot;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32\\Scripts&quot; }, &quot;python.pythonPath&quot;: &quot;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32\\python.exe&quot; } } srcフォルダ内に.envファイルを作成して下記の内容を記載します。
+ PYTHON_PATH=../python-*.*.*-embed-win32 プロジェクトフォルダ直下にpylintrcファイルを作成して下記の内容を記載します。"/>
 
 
     <link rel="preload" as="font" href="/fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
@@ -67,6 +104,49 @@
 <!-- Made with Geekblog theme https://github.com/thegeeklab/hugo-geekblog -->
 
     
+
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "posts",
+    "name": "windows10 \u002b python embeded \u002b visual studio code 環境作成",
+    "headline": "windows10 \u002b python embeded \u002b visual studio code 環境作成",
+    "alternativeHeadline": "",
+    "description": "配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。\nダウンロード 下記のサイトよりダウンロードして適当なフォルダに展開します。\nhttps:\/\/www.python.org\/downloads\/windows\/\npipのインストール 下記のサイトよりget-pip.pyをダウンロードして展開したフォルダにコピーします。\nhttps:\/\/bootstrap.pypa.io\/\n展開したフォルダ内にあるpython**._pthを編集してコメントアウトを外します。 **はバージョン番号。\n3.9だったらファイル名はpython39._pth\n #import site → import site 展開したフォルダ内にあるpython.exeを使って下記を実行します。\n .\\python.exe get-pip.py visual studio codeの設定 以下のフォルダ構成を想定しています。\n\u002b-project_folder | \u002b-python*.*.*-embed-win32 | \u002b-src | \u002b-.env | \u002b-main.py | \u002b-pylintrc | \u002b-projectname.code-workspace File → Save Workspace Asと選択してフォルダにprojectname.code-workspaceを作成します。\nprojectname.code-workspaceの内容を下記の内容に修正します。\n { \u0026quot;folders\u0026quot;: [ { \u0026quot;path\u0026quot;: \u0026quot;.\u0026quot; } ], \u0026quot;settings\u0026quot;: { \u0026quot;files.eol\u0026quot;: \u0026quot;\\n\u0026quot;, \u0026quot;terminal.integrated.env.windows\u0026quot;: { \u0026quot;PATH\u0026quot;: \u0026quot;{プロジェクトフォルダまでのpath}\\\\python-*.*.*-embed-win32;{プロジェクトフォルダまでのpath}\\\\python-*.*.*-embed-win32\\\\Scripts\u0026quot; }, \u0026quot;python.pythonPath\u0026quot;: \u0026quot;{プロジェクトフォルダまでのpath}\\\\python-*.*.*-embed-win32\\\\python.exe\u0026quot; } } srcフォルダ内に.envファイルを作成して下記の内容を記載します。\n PYTHON_PATH=..\/python-*.*.*-embed-win32 プロジェクトフォルダ直下にpylintrcファイルを作成して下記の内容を記載します。",
+    "inLanguage": "en",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http:\/\/wazatoki.github.io\/posts\/create_enviroment_windows10_python_embeded_vscode\/"
+    },
+    "author" : [
+    ],
+    "copyrightHolder" : "scribbling block",
+    "copyrightYear" : "2020",
+    "dateCreated": "2020-11-29T16:41:07.00Z",
+    "datePublished": "2020-11-29T16:41:07.00Z",
+    "dateModified": "2020-11-29T16:41:07.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "scribbling block",
+        "url": "http://wazatoki.github.io/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http:\/\/wazatoki.github.io\/brand.svg",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "url" : "http:\/\/wazatoki.github.io\/posts\/create_enviroment_windows10_python_embeded_vscode\/",
+    "wordCount" : "68",
+    "genre" : [ ]
+}
+</script>
+
 
 </head>
 
@@ -103,23 +183,104 @@
 
         <main class="gblog-page container">
             
-    
-    
+    <article class="gblog-post">
+        <header class="gblog-post__header">
+            
+            
+
+            <h1>windows10 &#43; python embeded &#43; visual studio code 環境作成</h1>
+            
+            <div class="gblog-post__meta">
+                <span class="no-wrap">
+                    <svg class="icon date"><use xlink:href="#date"></use></svg>
+                    <span class="gblog-post__tag">
+                        <time datetime="2020-11-29T16:41:07&#43;09:00">
+                            
+                            Nov 29, 2020
+                        </time>
+                    </span>
+                </span>
+
+                <span class="no-wrap">
+                    <svg class="icon timer"><use xlink:href="#timer"></use></svg>
+                    <span class="gblog-post__tag">1 min read</span>
+                </span>
+            </div>
+            
+        </header>
+
+        <section class="gblog-markdown">
+            
+
+
 
     
-    
-    
 
-<nav class="gblog-paging flex flex-even align-center" role="navigation">
-    <div class="gblog-paging__item gblog-paging__item--prev">
-    
-    </div>
-    <div class="gblog-paging__state">Page 1 of 0</div>
-    <div class="gblog-paging__item gblog-paging__item--next">
-    
-    </div>
-</nav>
 
+<p>配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。</p>
+<div class="gblog-post__anchorwrap"><h2 id="ダウンロード">ダウンロード<a data-clipboard-text="http://wazatoki.github.io/posts/create_enviroment_windows10_python_embeded_vscode/#ダウンロード" class="gblog-post__anchor gblog-post__anchor--right clip" aria-label="Anchor ダウンロード" href="#ダウンロード"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>下記のサイトよりダウンロードして適当なフォルダに展開します。</p>
+<p><a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a></p>
+<div class="gblog-post__anchorwrap"><h2 id="pipのインストール">pipのインストール<a data-clipboard-text="http://wazatoki.github.io/posts/create_enviroment_windows10_python_embeded_vscode/#pipのインストール" class="gblog-post__anchor gblog-post__anchor--right clip" aria-label="Anchor pipのインストール" href="#pipのインストール"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>下記のサイトよりget-pip.pyをダウンロードして展開したフォルダにコピーします。</p>
+<p><a href="https://bootstrap.pypa.io/">https://bootstrap.pypa.io/</a></p>
+<p>展開したフォルダ内にあるpython**._pthを編集してコメントアウトを外します。 **はバージョン番号。</p>
+<p>3.9だったらファイル名はpython39._pth</p>
+<pre><code>
+#import site → import site
+
+</code></pre><p>展開したフォルダ内にあるpython.exeを使って下記を実行します。</p>
+<pre><code>
+.\python.exe get-pip.py
+
+</code></pre><div class="gblog-post__anchorwrap"><h2 id="visual-studio-codeの設定">visual studio codeの設定<a data-clipboard-text="http://wazatoki.github.io/posts/create_enviroment_windows10_python_embeded_vscode/#visual-studio-codeの設定" class="gblog-post__anchor gblog-post__anchor--right clip" aria-label="Anchor visual studio codeの設定" href="#visual-studio-codeの設定"><svg class="icon link"><use xlink:href="#link"></use></svg></a></h2></div>
+<p>以下のフォルダ構成を想定しています。</p>
+<pre><code>+-project_folder
+|
++-python*.*.*-embed-win32
+|
++-src
+  |
+  +-.env
+  |
+  +-main.py
+|
++-pylintrc
+|
++-projectname.code-workspace
+
+</code></pre><p>File → Save Workspace Asと選択してフォルダにprojectname.code-workspaceを作成します。</p>
+<p>projectname.code-workspaceの内容を下記の内容に修正します。</p>
+<pre><code>
+{
+	&quot;folders&quot;: [
+		{
+			&quot;path&quot;: &quot;.&quot;
+		}
+	],
+	&quot;settings&quot;: {
+		&quot;files.eol&quot;: &quot;\n&quot;,
+		&quot;terminal.integrated.env.windows&quot;: {
+			&quot;PATH&quot;: &quot;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32\\Scripts&quot;
+		},
+		&quot;python.pythonPath&quot;: &quot;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32\\python.exe&quot;
+	}
+}
+
+
+</code></pre><p>srcフォルダ内に.envファイルを作成して下記の内容を記載します。</p>
+<pre><code>
+PYTHON_PATH=../python-*.*.*-embed-win32
+
+</code></pre><p>プロジェクトフォルダ直下にpylintrcファイルを作成して下記の内容を記載します。</p>
+<pre><code>
+init-hook=&quot;./src&quot;
+
+</code></pre><p>以上となります。</p>
+
+
+        </section>
+    </article>
 
         </main>
 

@@ -3,11 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://wazatoki.github.io/authors/</loc>
+    <loc>http://wazatoki.github.io/posts/</loc>
+    <lastmod>2020-11-29T16:41:07+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://wazatoki.github.io/</loc>
+    <lastmod>2020-11-29T16:41:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wazatoki.github.io/posts/create_enviroment_windows10_python_embeded_vscode/</loc>
+    <lastmod>2020-11-29T16:41:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wazatoki.github.io/authors/</loc>
   </url>
   
   <url>

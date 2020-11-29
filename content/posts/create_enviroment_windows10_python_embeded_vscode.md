@@ -2,9 +2,6 @@
 title: "windows10 + python embeded + visual studio code 環境作成"
 date: 2020-11-29T16:41:07+09:00
 draft: false
-categories: ["Tech"]
-tags: ["windows10","python","vscode"]
-Authors: "wazatoki"
 ---
 
 配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。
