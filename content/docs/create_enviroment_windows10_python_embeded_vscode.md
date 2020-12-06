@@ -2,19 +2,23 @@
 title: "windows10 + python embeded + visual studio code 環境作成"
 date: 2020-11-29T16:41:07+09:00
 draft: false
+categories:
+  - "開発環境"
+tags:
+  - "python"
+  - "visual studio code"
+  - "ソフトウエア運用"
 ---
 
 配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。
 
-
-
-# ダウンロード
+## ダウンロード
 
 下記のサイトよりダウンロードして適当なフォルダに展開します。
 
 https://www.python.org/downloads/windows/
 
-# pipのインストール
+## pipのインストール
 
 下記のサイトよりget-pip.pyをダウンロードして展開したフォルダにコピーします。
 
@@ -36,7 +40,7 @@ https://bootstrap.pypa.io/
 .\python.exe get-pip.py
 
 ```
-# visual studio codeの設定
+## visual studio codeの設定
 
 以下のフォルダ構成を想定しています。
 
