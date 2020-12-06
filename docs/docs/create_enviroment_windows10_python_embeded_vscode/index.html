@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>windows10 &#43; python embeded &#43; visual studio code 環境作成 - scribbling block</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="scribbling block" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">scribbling block</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">windows10 &#43; python embeded &#43; visual studio code 環境作成</h1>
+			
+		</header><div class="content post__content clearfix">
+			<p>配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。</p>
+<h1 id="ダウンロード">ダウンロード</h1>
+<p>下記のサイトよりダウンロードして適当なフォルダに展開します。</p>
+<p><a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a></p>
+<h1 id="pipのインストール">pipのインストール</h1>
+<p>下記のサイトよりget-pip.pyをダウンロードして展開したフォルダにコピーします。</p>
+<p><a href="https://bootstrap.pypa.io/">https://bootstrap.pypa.io/</a></p>
+<p>展開したフォルダ内にあるpython**._pthを編集してコメントアウトを外します。 **はバージョン番号。</p>
+<p>3.9だったらファイル名はpython39._pth</p>
+<pre><code>
+#import site → import site
+
+</code></pre><p>展開したフォルダ内にあるpython.exeを使って下記を実行します。</p>
+<pre><code>
+.\python.exe get-pip.py
+
+</code></pre><h1 id="visual-studio-codeの設定">visual studio codeの設定</h1>
+<p>以下のフォルダ構成を想定しています。</p>
+<pre><code>+-project_folder
+|
++-python*.*.*-embed-win32
+|
++-src
+  |
+  +-.env
+  |
+  +-main.py
+|
++-pylintrc
+|
++-projectname.code-workspace
+
+</code></pre><p>File → Save Workspace Asと選択してフォルダにprojectname.code-workspaceを作成します。</p>
+<p>projectname.code-workspaceの内容を下記の内容に修正します。</p>
+<pre><code>
+{
+	&quot;folders&quot;: [
+		{
+			&quot;path&quot;: &quot;.&quot;
+		}
+	],
+	&quot;settings&quot;: {
+		&quot;files.eol&quot;: &quot;\n&quot;,
+		&quot;terminal.integrated.env.windows&quot;: {
+			&quot;PATH&quot;: &quot;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32\\Scripts&quot;
+		},
+		&quot;python.pythonPath&quot;: &quot;{プロジェクトフォルダまでのpath}\\python-*.*.*-embed-win32\\python.exe&quot;
+	}
+}
+
+
+</code></pre><p>srcフォルダ内に.envファイルを作成して下記の内容を記載します。</p>
+<pre><code>
+PYTHON_PATH=../python-*.*.*-embed-win32
+
+</code></pre><p>プロジェクトフォルダ直下にpylintrcファイルを作成して下記の内容を記載します。</p>
+<pre><code>
+init-hook=&quot;./src&quot;
+
+</code></pre><p>以上となります。</p>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 scribbling block.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
