@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="ja">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,19 @@
 	<title>Docs - scribbling block</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
+		<meta property="og:title" content="Docs" />
+<meta property="og:description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://wazatoki.github.io/docs/" />
+<meta property="og:updated_time" content="2020-11-29T16:41:07+09:00" />
+
+		<meta itemprop="name" content="Docs">
+<meta itemprop="description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。">
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Docs"/>
+<meta name="twitter:description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。"/>
+
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -28,11 +41,40 @@
 		<a class="logo__link" href="/" title="scribbling block" rel="home">
 			<div class="logo__item logo__text">
 					<div class="logo__title">scribbling block</div>
-					
+					<div class="logo__tagline">IT技術系調べ物のメモ</div>
 				</div>
 		</a>
 	</div>
-		<div class="divider"></div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">トップ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/">
+				
+				<span class="menu__text">カテゴリー</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tags/">
+				
+				<span class="menu__text">タグ</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
 	</div>
 </header>
 		<div class="wrapper flex">
@@ -53,20 +95,58 @@
 	<div class="content list__excerpt post__content clearfix">
 		配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。 ダウンロード 下記のサイトよりダウンロードして適当なフォルダに展開します。 https://www.python.org/downloads/windows/ pipのインストール 下記のサイトよりget-pip.pyをダウン
 	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/docs/create_enviroment_windows10_python_embeded_vscode/">続きを読む…</a>
+	</div>
 </article>
 </main>
 
 
 			</div>
 			
-
+<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="検索…" value="" name="q" aria-label="検索…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="http://wazatoki.github.io/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">最近の投稿</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/docs/create_enviroment_windows10_python_embeded_vscode/">windows10 &#43; python embeded &#43; visual studio code 環境作成</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">カテゴリー</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/">開発環境</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">タグ</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/visual-studio-code/" title="visual studio code">visual studio code (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A8%E3%82%A2%E9%81%8B%E7%94%A8/" title="ソフトウエア運用">ソフトウエア運用 (1)</a>
+	</div>
+</div>
+</aside>
 		</div>
 		<footer class="footer">
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2020 scribbling block.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+			&copy; 2020 wazatoki.
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマで生成されています。</span>
 		</div>
 	</div>
 </footer>
