@@ -96,7 +96,7 @@ PYTHON_PATH=../python-*.*.*-embed-win32
 
 ```
 
-init-hook="./src"
+init-hook='import sys; sys.path.append("{プロジェクトフォルダまでのpath}/src")'
 
 ```
 

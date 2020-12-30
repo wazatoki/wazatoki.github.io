@@ -18,7 +18,7 @@
 <meta itemprop="description" content="配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。 ダウンロード 下記のサイトよりダウンロードして適当なフォルダに展開します。 https://www.python.org/downloads/windows/ pipのインストール 下記のサイトよりget-pip.pyをダウン">
 <meta itemprop="datePublished" content="2020-11-29T16:41:07+09:00" />
 <meta itemprop="dateModified" content="2020-11-29T16:41:07+09:00" />
-<meta itemprop="wordCount" content="681">
+<meta itemprop="wordCount" content="735">
 
 
 
@@ -163,7 +163,7 @@ PYTHON_PATH=../python-*.*.*-embed-win32
 
 </code></pre><p>プロジェクトフォルダ直下にpylintrcファイルを作成して下記の内容を記載します。</p>
 <pre><code>
-init-hook=&quot;./src&quot;
+init-hook='import sys; sys.path.append(&quot;{プロジェクトフォルダまでのpath}/src&quot;)'
 
 </code></pre><p>以上となります。</p>
 
@@ -192,15 +192,7 @@ init-hook=&quot;./src&quot;
 
 
 			</div>
-			<aside class="sidebar"><div class="widget-search widget">
-	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
-		<label>
-			<input class="widget-search__field" type="search" placeholder="検索…" value="" name="q" aria-label="検索…">
-		</label>
-		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="http://wazatoki.github.io/" />
-	</form>
-</div>
+			<aside class="sidebar">
 <div class="widget-recent widget">
 	<h4 class="widget__title">最近の投稿</h4>
 	<div class="widget__content">
