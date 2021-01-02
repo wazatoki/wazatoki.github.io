@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>python - scribbling block</title>
+	<title>blog - scribbling block</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="python" />
+		<meta property="og:title" content="blog" />
 <meta property="og:description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://wazatoki.github.io/tags/python/" />
-<meta property="og:updated_time" content="2021-01-02T19:00:48+09:00" />
+<meta property="og:url" content="http://wazatoki.github.io/categories/blog/" />
+<meta property="og:updated_time" content="2021-01-02T21:45:53+09:00" />
 
-		<meta itemprop="name" content="python">
+		<meta itemprop="name" content="blog">
 <meta itemprop="description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。">
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="python"/>
+<meta name="twitter:title" content="blog"/>
 <meta name="twitter:description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
 
 	<link rel="stylesheet" href="/css/style.css">
 	
-	<link rel="alternate" type="application/rss+xml" href="/tags/python/index.xml" title="scribbling block">
+	<link rel="alternate" type="application/rss+xml" href="/categories/blog/index.xml" title="scribbling block">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
@@ -82,36 +82,18 @@
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">python</h1>
+		<h1 class="main__title">blog</h1>
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/docs/pylint_import_error/" rel="bookmark">
-			Pylint使用時のインポートエラー対策
+			<a href="/docs/access_hugo_server_from_out_of_localhost/" rel="bookmark">
+			hugo開発サーバーへlocalhost外からのアクセス
 			</a>
 		</h2>
 		
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		visual studio codeのpythonプラグインでpylintを使用した時に表示されたimportエラーの対応記録。 workspace.code-workspace に設定記載 &quot;settings&quot;: { &quot;python.linting.pylintPath&quot;: &quot;{path to pylint}&quot;, &quot;python.pipenvPath&quot;: &quot;{path to pipenv}&quot;, &quot;python.pythonPath&quot;: &quot;{path to python}&quot; } pylintrcの設定 pylintrcの生成 $&gt;pylint --generate-rcfile &gt; pylintrc 生成したpylintrcを編集 init-hook='import sys; sys.path.append(&quot;path to project root
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/docs/pylint_import_error/">続きを読む…</a>
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/docs/create_enviroment_windows10_python_embeded_vscode/" rel="bookmark">
-			windows10 &#43; python embeded &#43; visual studio code 環境作成
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。 ダウンロード 下記のサイトよりダウンロードして適当なフォルダに展開します。 https://www.python.org/downloads/windows/ pipのインストール 下記のサイトよりget-pip.pyをダウン
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/docs/create_enviroment_windows10_python_embeded_vscode/">続きを読む…</a>
+		hugo server -Dで開発サーバーを起動するとlocalhost外からアクセスできない。 $&gt;hugo server --baseURL=&quot;192.168.0.1&quot; --bind=&quot;192.168.0.1&quot; --port=8080 で起動するとhttp://192.168.0.1:8080でアクセスできる。
 	</div>
 </article>
 </main>
