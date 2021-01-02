@@ -6,7 +6,16 @@
     <description>Recent content in python on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 29 Nov 2020 16:41:07 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jan 2021 19:00:48 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pylint使用時のインポートエラー対策</title>
+      <link>http://wazatoki.github.io/docs/pylint_import_error/</link>
+      <pubDate>Sat, 02 Jan 2021 19:00:48 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/pylint_import_error/</guid>
+      <description>visual studio codeのpythonプラグインでpylintを使用した時に表示されたimportエラーの対応記録。 workspace.code-workspace に設定記載 &amp;quot;settings&amp;quot;: { &amp;quot;python.linting.pylintPath&amp;quot;: &amp;quot;{path to pylint}&amp;quot;, &amp;quot;python.pipenvPath&amp;quot;: &amp;quot;{path to pipenv}&amp;quot;, &amp;quot;python.pythonPath&amp;quot;: &amp;quot;{path to python}&amp;quot; } pylintrcの設定 pylintrcの生成 $&amp;gt;pylint --generate-rcfile &amp;gt; pylintrc 生成したpylintrcを編集 init-hook=&#39;import sys; sys.path.append(&amp;quot;path to project root</description>
+    </item>
+    
     <item>
       <title>windows10 &#43; python embeded &#43; visual studio code 環境作成</title>
       <link>http://wazatoki.github.io/docs/create_enviroment_windows10_python_embeded_vscode/</link>

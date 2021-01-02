@@ -11,7 +11,7 @@
 <meta property="og:description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://wazatoki.github.io/tags/python/" />
-<meta property="og:updated_time" content="2020-11-29T16:41:07+09:00" />
+<meta property="og:updated_time" content="2021-01-02T19:00:48+09:00" />
 
 		<meta itemprop="name" content="python">
 <meta itemprop="description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。">
@@ -86,6 +86,21 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h2 class="list__title post__title">
+			<a href="/docs/pylint_import_error/" rel="bookmark">
+			Pylint使用時のインポートエラー対策
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		visual studio codeのpythonプラグインでpylintを使用した時に表示されたimportエラーの対応記録。 workspace.code-workspace に設定記載 &quot;settings&quot;: { &quot;python.linting.pylintPath&quot;: &quot;{path to pylint}&quot;, &quot;python.pipenvPath&quot;: &quot;{path to pipenv}&quot;, &quot;python.pythonPath&quot;: &quot;{path to python}&quot; } pylintrcの設定 pylintrcの生成 $&gt;pylint --generate-rcfile &gt; pylintrc 生成したpylintrcを編集 init-hook='import sys; sys.path.append(&quot;path to project root
+	</div>
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/docs/pylint_import_error/">続きを読む…</a>
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h2 class="list__title post__title">
 			<a href="/docs/create_enviroment_windows10_python_embeded_vscode/" rel="bookmark">
 			windows10 &#43; python embeded &#43; visual studio code 環境作成
 			</a>
@@ -109,6 +124,7 @@
 	<h4 class="widget__title">最近の投稿</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/docs/pylint_import_error/">Pylint使用時のインポートエラー対策</a></li>
 			<li class="widget__item"><a class="widget__link" href="/docs/create_enviroment_windows10_python_embeded_vscode/">windows10 &#43; python embeded &#43; visual studio code 環境作成</a></li>
 		</ul>
 	</div>
@@ -126,8 +142,8 @@
 <div class="widget-taglist widget">
 	<h4 class="widget__title">タグ</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/visual-studio-code/" title="visual studio code">visual studio code (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="python">python (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/visual-studio-code/" title="visual studio code">visual studio code (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A8%E3%82%A2%E9%81%8B%E7%94%A8/" title="ソフトウエア運用">ソフトウエア運用 (1)</a>
 	</div>
 </div>
@@ -137,7 +153,7 @@
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2020 wazatoki.
+			&copy; 2021 wazatoki.
 			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマで生成されています。</span>
 		</div>
 	</div>
