@@ -2,6 +2,7 @@
 title: "windows10 + python embeded + visual studio code 環境作成"
 date: 2020-11-29T16:41:07+09:00
 draft: false
+sidebar: false
 categories:
   - "開発環境"
 tags:
