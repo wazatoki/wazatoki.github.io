@@ -9,6 +9,11 @@ publishDir = "docs"
 hasCJKLanguage = true # 日本語・中国語・韓国語の単語カウントを有効にする
 summaryLength = 120 # サマリーの長さを120単語にする
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [Author] # Used in authorbox
   name = "wazatoki"
   bio = "本サイトの管理人です。goやpythonで遊んでいます。"
