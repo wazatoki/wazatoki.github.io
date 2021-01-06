@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NTPを使ったRaspberry Piの時刻合わせ - scribbling block</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="NTPを使ったRaspberry Piの時刻合わせ" />
+<meta property="og:description" content="Raspberry Pi 4 model Bを使って確認しました。 というかsystemd-timesyncdを使っているなら大体同じ。 設定ファイル/etc/systemd/timesyncd.confを修正します。 cd /etc/systemd sudo cp -p timesyncd.conf timesyncd.conf.org sudo vi timesyncd.conf 以下の内容を[Time]の下に追記する。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://wazatoki.github.io/docs/setting_the_time_on_raspberry_pi_using_ntp/" />
+<meta property="article:published_time" content="2021-01-06T18:53:00+09:00" />
+<meta property="article:modified_time" content="2021-01-06T18:53:00+09:00" />
+
+		<meta itemprop="name" content="NTPを使ったRaspberry Piの時刻合わせ">
+<meta itemprop="description" content="Raspberry Pi 4 model Bを使って確認しました。 というかsystemd-timesyncdを使っているなら大体同じ。 設定ファイル/etc/systemd/timesyncd.confを修正します。 cd /etc/systemd sudo cp -p timesyncd.conf timesyncd.conf.org sudo vi timesyncd.conf 以下の内容を[Time]の下に追記する。">
+<meta itemprop="datePublished" content="2021-01-06T18:53:00+09:00" />
+<meta itemprop="dateModified" content="2021-01-06T18:53:00+09:00" />
+<meta itemprop="wordCount" content="262">
+
+
+
+<meta itemprop="keywords" content="raspberry pi,ntp," />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="NTPを使ったRaspberry Piの時刻合わせ"/>
+<meta name="twitter:description" content="Raspberry Pi 4 model Bを使って確認しました。 というかsystemd-timesyncdを使っているなら大体同じ。 設定ファイル/etc/systemd/timesyncd.confを修正します。 cd /etc/systemd sudo cp -p timesyncd.conf timesyncd.conf.org sudo vi timesyncd.conf 以下の内容を[Time]の下に追記する。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="scribbling block" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">scribbling block</div>
+					<div class="logo__tagline">IT技術系調べ物のメモ</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">トップ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/">
+				
+				<span class="menu__text">カテゴリー</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tags/">
+				
+				<span class="menu__text">タグ</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">NTPを使ったRaspberry Piの時刻合わせ</h1>
+			
+		</header><div class="content post__content clearfix">
+			<p>Raspberry Pi 4 model Bを使って確認しました。</p>
+<p>というかsystemd-timesyncdを使っているなら大体同じ。</p>
+<p>設定ファイル/etc/systemd/timesyncd.confを修正します。</p>
+<pre><code>cd /etc/systemd
+sudo cp -p timesyncd.conf timesyncd.conf.org
+sudo vi timesyncd.conf
+</code></pre><p>以下の内容を[Time]の下に追記する。</p>
+<pre><code>NTP=ntp.jst.mfeed.ad.jp ntp.nict.jp time.google.com
+</code></pre><p>NTP=の後にNTPサーバのホスト名かIPを書く。複数ある時は空白でで区切る。</p>
+<p>（参考）<a href="https://wiki.archlinux.jp/index.php/Systemd-timesyncd">systemd-timesyncd</a></p>
+<p>FallbackNTPについてはこのような記事を投稿している人がいた。</p>
+<p><a href="https://qiita.com/sskki/items/6a73fade9bf4d8f93d93">timesyncdのFallbackNTPは「予備サーバー」ではない</a></p>
+<p>知らなかっったです。</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/raspberry-pi/" rel="tag">raspberry pi</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/ntp/" rel="tag">ntp</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/docs/access_hugo_server_from_out_of_localhost/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
+			<p class="pager__title">hugo開発サーバーへlocalhost外からのアクセス</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 wazatoki.
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマで生成されています。</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

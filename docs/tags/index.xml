@@ -6,7 +6,25 @@
     <description>Recent content in Tags on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 02 Jan 2021 21:45:53 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 18:53:00 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ntp</title>
+      <link>http://wazatoki.github.io/tags/ntp/</link>
+      <pubDate>Wed, 06 Jan 2021 18:53:00 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/tags/ntp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry pi</title>
+      <link>http://wazatoki.github.io/tags/raspberry-pi/</link>
+      <pubDate>Wed, 06 Jan 2021 18:53:00 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>http://wazatoki.github.io/tags/hugo/</link>

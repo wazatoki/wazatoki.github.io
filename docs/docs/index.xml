@@ -6,7 +6,16 @@
     <description>Recent content in Docs on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 02 Jan 2021 21:45:53 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 18:53:00 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NTPを使ったRaspberry Piの時刻合わせ</title>
+      <link>http://wazatoki.github.io/docs/setting_the_time_on_raspberry_pi_using_ntp/</link>
+      <pubDate>Wed, 06 Jan 2021 18:53:00 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/setting_the_time_on_raspberry_pi_using_ntp/</guid>
+      <description>Raspberry Pi 4 model Bを使って確認しました。 というかsystemd-timesyncdを使っているなら大体同じ。 設定ファイル/etc/systemd/timesyncd.confを修正します。 cd /etc/systemd sudo cp -p timesyncd.conf timesyncd.conf.org sudo vi timesyncd.conf 以下の内容を[Time]の下に追記する。</description>
+    </item>
+    
     <item>
       <title>hugo開発サーバーへlocalhost外からのアクセス</title>
       <link>http://wazatoki.github.io/docs/access_hugo_server_from_out_of_localhost/</link>

@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tags - scribbling block</title>
+	<title>ntp - scribbling block</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="Tags" />
+		<meta property="og:title" content="ntp" />
 <meta property="og:description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://wazatoki.github.io/tags/" />
+<meta property="og:url" content="http://wazatoki.github.io/tags/ntp/" />
 <meta property="og:updated_time" content="2021-01-06T18:53:00+09:00" />
 
-		<meta itemprop="name" content="Tags">
+		<meta itemprop="name" content="ntp">
 <meta itemprop="description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。">
 
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tags"/>
+<meta name="twitter:title" content="ntp"/>
 <meta name="twitter:description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +27,7 @@
 
 	<link rel="stylesheet" href="/css/style.css">
 	
-	<link rel="alternate" type="application/rss+xml" href="/tags/index.xml" title="scribbling block">
+	<link rel="alternate" type="application/rss+xml" href="/tags/ntp/index.xml" title="scribbling block">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
@@ -65,7 +65,7 @@
 				
 			</a>
 		</li>
-		<li class="menu__item menu__item--active">
+		<li class="menu__item">
 			<a class="menu__link" href="/tags/">
 				
 				<span class="menu__text">タグ</span>
@@ -82,78 +82,21 @@
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">Tags</h1>
+		<h1 class="main__title">ntp</h1>
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/tags/ntp/" rel="bookmark">
-			ntp
+			<a href="/docs/setting_the_time_on_raspberry_pi_using_ntp/" rel="bookmark">
+			NTPを使ったRaspberry Piの時刻合わせ
 			</a>
 		</h2>
 		
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		
+		Raspberry Pi 4 model Bを使って確認しました。 というかsystemd-timesyncdを使っているなら大体同じ。 設定ファイル/etc/systemd/timesyncd.confを修正します。 cd /etc/systemd sudo cp -p timesyncd.conf timesyncd.conf.org sudo vi timesyncd.conf 以下の内容を[Time]の下に追記する。
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/tags/raspberry-pi/" rel="bookmark">
-			raspberry pi
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/tags/hugo/" rel="bookmark">
-			hugo
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/tags/python/" rel="bookmark">
-			python
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/tags/visual-studio-code/" rel="bookmark">
-			visual studio code
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/tags/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A8%E3%82%A2%E9%81%8B%E7%94%A8/" rel="bookmark">
-			ソフトウエア運用
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
+	<div class="list__footer clearfix">
+		<a class="list__footer-readmore btn" href="/docs/setting_the_time_on_raspberry_pi_using_ntp/">続きを読む…</a>
 	</div>
 </article>
 </main>

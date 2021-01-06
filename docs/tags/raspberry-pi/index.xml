@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>raspberry pi on scribbling block</title>
+    <link>http://wazatoki.github.io/tags/raspberry-pi/</link>
+    <description>Recent content in raspberry pi on scribbling block</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 06 Jan 2021 18:53:00 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NTPを使ったRaspberry Piの時刻合わせ</title>
+      <link>http://wazatoki.github.io/docs/setting_the_time_on_raspberry_pi_using_ntp/</link>
+      <pubDate>Wed, 06 Jan 2021 18:53:00 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/setting_the_time_on_raspberry_pi_using_ntp/</guid>
+      <description>Raspberry Pi 4 model Bを使って確認しました。 というかsystemd-timesyncdを使っているなら大体同じ。 設定ファイル/etc/systemd/timesyncd.confを修正します。 cd /etc/systemd sudo cp -p timesyncd.conf timesyncd.conf.org sudo vi timesyncd.conf 以下の内容を[Time]の下に追記する。</description>
+    </item>
+    
+  </channel>
+</rss>
