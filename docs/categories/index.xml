@@ -6,7 +6,16 @@
     <description>Recent content in Categories on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 10 Jan 2021 17:21:45 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 16:51:14 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>インフラ</title>
+      <link>http://wazatoki.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/</link>
+      <pubDate>Mon, 11 Jan 2021 16:51:14 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>運用</title>
       <link>http://wazatoki.github.io/categories/%E9%81%8B%E7%94%A8/</link>
@@ -17,11 +26,11 @@
     </item>
     
     <item>
-      <title>インフラ</title>
-      <link>http://wazatoki.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/</link>
+      <title>開発環境</title>
+      <link>http://wazatoki.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/</link>
       <pubDate>Sat, 09 Jan 2021 16:19:14 +0900</pubDate>
       
-      <guid>http://wazatoki.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/</guid>
+      <guid>http://wazatoki.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/</guid>
       <description></description>
     </item>
     
@@ -31,15 +40,6 @@
       <pubDate>Sat, 02 Jan 2021 21:45:53 +0900</pubDate>
       
       <guid>http://wazatoki.github.io/categories/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>開発環境</title>
-      <link>http://wazatoki.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/</link>
-      <pubDate>Sat, 02 Jan 2021 19:00:48 +0900</pubDate>
-      
-      <guid>http://wazatoki.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/</guid>
       <description></description>
     </item>
     

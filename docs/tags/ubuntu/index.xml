@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ubuntu on scribbling block</title>
+    <link>http://wazatoki.github.io/tags/ubuntu/</link>
+    <description>Recent content in ubuntu on scribbling block</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 09 Jan 2021 16:19:14 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install_google_chrome_in_wsl2_ubuntu</title>
+      <link>http://wazatoki.github.io/docs/install_google_chrome_in_wsl2_ubuntu/</link>
+      <pubDate>Sat, 09 Jan 2021 16:19:14 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/install_google_chrome_in_wsl2_ubuntu/</guid>
+      <description>google chromeのインストール sudo apt-get update sudo apt-get install libappindicator1 libappindicator3-1 fonts-liberation curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb sudo dpkg -i google-chrome-stable_current_amd64.deb # ここで依存関係のエラーが出るので依存をfixする sudo apt --fix-broken install # もう一度インストール sudo dpkg -i google-chrome-stable_current_amd64.deb angularでユニットテストを行う時の設定 karuma.conf.js browsers: [&#39;Chrome&#39;], customLaunchers: { ChromeHeadlessCI: { base: &#39;ChromeHeadless&#39;, flags: [&#39;--no-sandbox&#39;] } }, テストを実行するときは</description>
+    </item>
+    
+  </channel>
+</rss>

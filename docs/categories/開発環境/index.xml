@@ -6,7 +6,16 @@
     <description>Recent content in 開発環境 on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 02 Jan 2021 19:00:48 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Jan 2021 16:19:14 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install_google_chrome_in_wsl2_ubuntu</title>
+      <link>http://wazatoki.github.io/docs/install_google_chrome_in_wsl2_ubuntu/</link>
+      <pubDate>Sat, 09 Jan 2021 16:19:14 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/install_google_chrome_in_wsl2_ubuntu/</guid>
+      <description>google chromeのインストール sudo apt-get update sudo apt-get install libappindicator1 libappindicator3-1 fonts-liberation curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb sudo dpkg -i google-chrome-stable_current_amd64.deb # ここで依存関係のエラーが出るので依存をfixする sudo apt --fix-broken install # もう一度インストール sudo dpkg -i google-chrome-stable_current_amd64.deb angularでユニットテストを行う時の設定 karuma.conf.js browsers: [&#39;Chrome&#39;], customLaunchers: { ChromeHeadlessCI: { base: &#39;ChromeHeadless&#39;, flags: [&#39;--no-sandbox&#39;] } }, テストを実行するときは</description>
+    </item>
+    
     <item>
       <title>Pylint使用時のインポートエラー対策</title>
       <link>http://wazatoki.github.io/docs/pylint_import_error/</link>
