@@ -1,5 +1,5 @@
 ---
-title: "Install_google_chrome_in_wsl2_ubuntu"
+title: "wls2内のubuntuにgoogle chromeをインストールする"
 date: 2021-01-09T16:19:14+09:00
 draft: false
 sidebar: false
