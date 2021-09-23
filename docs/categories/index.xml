@@ -6,7 +6,16 @@
     <description>Recent content in Categories on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 11 Jan 2021 16:51:14 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Sep 2021 16:37:35 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>development</title>
+      <link>http://wazatoki.github.io/categories/development/</link>
+      <pubDate>Thu, 23 Sep 2021 16:37:35 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/categories/development/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>インフラ</title>
       <link>http://wazatoki.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/</link>

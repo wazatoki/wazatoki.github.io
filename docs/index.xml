@@ -6,7 +6,16 @@
     <description>Recent content on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 11 Jan 2021 16:51:14 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Sep 2021 16:37:35 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mat dialogから親コンポーネントにデータを送る</title>
+      <link>http://wazatoki.github.io/docs/output_data_to_parent_from_angular_dialog/</link>
+      <pubDate>Thu, 23 Sep 2021 16:37:35 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/output_data_to_parent_from_angular_dialog/</guid>
+      <description>ダイアログを閉じたときにデータを送る ダイアログコンポーネント close() { this.dialogRef.close(data); } constructor( public dialogRef: MatDialogRef&amp;lt;MyDialogComponent&amp;gt;, @Inject(MAT_DIALOG_DATA) public data: DialogData ) { } 親コンポーネント openDialog() { this.dialogRef = this.myDialog.open(MyDialogComponent, { data: {} }); this.dialogRef.afterClosed().subscribe( data =&amp;gt; console.log(&amp;quot;Dialog output:&amp;quot;, data) ); } constructor( private myDialog: MatDialog, ) { } ダイアログを閉じないでデータを送る ダイアログコンポーネント @Output() submitClicked = new EventEmitter&amp;lt;any&amp;gt;(); sendMessageToParent() { const data = &#39;Your data&#39;; this.submitClicked.emit(data); }</description>
+    </item>
+    
     <item>
       <title>MariaDB/Mysql on docker環境におけるutf8文字化け対策</title>
       <link>http://wazatoki.github.io/docs/dealing_with_garbled_utf8_strings_in_mariadb_and_mysql/</link>

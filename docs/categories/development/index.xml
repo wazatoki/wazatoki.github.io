@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development on scribbling block</title>
+    <link>http://wazatoki.github.io/categories/development/</link>
+    <description>Recent content in development on scribbling block</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 23 Sep 2021 16:37:35 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mat dialogから親コンポーネントにデータを送る</title>
+      <link>http://wazatoki.github.io/docs/output_data_to_parent_from_angular_dialog/</link>
+      <pubDate>Thu, 23 Sep 2021 16:37:35 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/output_data_to_parent_from_angular_dialog/</guid>
+      <description>ダイアログを閉じたときにデータを送る ダイアログコンポーネント close() { this.dialogRef.close(data); } constructor( public dialogRef: MatDialogRef&amp;lt;MyDialogComponent&amp;gt;, @Inject(MAT_DIALOG_DATA) public data: DialogData ) { } 親コンポーネント openDialog() { this.dialogRef = this.myDialog.open(MyDialogComponent, { data: {} }); this.dialogRef.afterClosed().subscribe( data =&amp;gt; console.log(&amp;quot;Dialog output:&amp;quot;, data) ); } constructor( private myDialog: MatDialog, ) { } ダイアログを閉じないでデータを送る ダイアログコンポーネント @Output() submitClicked = new EventEmitter&amp;lt;any&amp;gt;(); sendMessageToParent() { const data = &#39;Your data&#39;; this.submitClicked.emit(data); }</description>
+    </item>
+    
+  </channel>
+</rss>

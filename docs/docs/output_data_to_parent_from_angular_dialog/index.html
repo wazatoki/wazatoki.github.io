@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>mat dialogから親コンポーネントにデータを送る - scribbling block</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="mat dialogから親コンポーネントにデータを送る" />
+<meta property="og:description" content="ダイアログを閉じたときにデータを送る ダイアログコンポーネント close() { this.dialogRef.close(data); } constructor( public dialogRef: MatDialogRef&lt;MyDialogComponent&gt;, @Inject(MAT_DIALOG_DATA) public data: DialogData ) { } 親コンポーネント openDialog() { this.dialogRef = this.myDialog.open(MyDialogComponent, { data: {} }); this.dialogRef.afterClosed().subscribe( data =&gt; console.log(&quot;Dialog output:&quot;, data) ); } constructor( private myDialog: MatDialog, ) { } ダイアログを閉じないでデータを送る ダイアログコンポーネント @Output() submitClicked = new EventEmitter&lt;any&gt;(); sendMessageToParent() { const data = &#39;Your data&#39;; this.submitClicked.emit(data); }" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://wazatoki.github.io/docs/output_data_to_parent_from_angular_dialog/" />
+<meta property="article:published_time" content="2021-09-23T16:37:35+09:00" />
+<meta property="article:modified_time" content="2021-09-23T16:37:35+09:00" />
+
+		<meta itemprop="name" content="mat dialogから親コンポーネントにデータを送る">
+<meta itemprop="description" content="ダイアログを閉じたときにデータを送る ダイアログコンポーネント close() { this.dialogRef.close(data); } constructor( public dialogRef: MatDialogRef&lt;MyDialogComponent&gt;, @Inject(MAT_DIALOG_DATA) public data: DialogData ) { } 親コンポーネント openDialog() { this.dialogRef = this.myDialog.open(MyDialogComponent, { data: {} }); this.dialogRef.afterClosed().subscribe( data =&gt; console.log(&quot;Dialog output:&quot;, data) ); } constructor( private myDialog: MatDialog, ) { } ダイアログを閉じないでデータを送る ダイアログコンポーネント @Output() submitClicked = new EventEmitter&lt;any&gt;(); sendMessageToParent() { const data = &#39;Your data&#39;; this.submitClicked.emit(data); }">
+<meta itemprop="datePublished" content="2021-09-23T16:37:35+09:00" />
+<meta itemprop="dateModified" content="2021-09-23T16:37:35+09:00" />
+<meta itemprop="wordCount" content="165">
+
+
+
+<meta itemprop="keywords" content="angular," />
+
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="mat dialogから親コンポーネントにデータを送る"/>
+<meta name="twitter:description" content="ダイアログを閉じたときにデータを送る ダイアログコンポーネント close() { this.dialogRef.close(data); } constructor( public dialogRef: MatDialogRef&lt;MyDialogComponent&gt;, @Inject(MAT_DIALOG_DATA) public data: DialogData ) { } 親コンポーネント openDialog() { this.dialogRef = this.myDialog.open(MyDialogComponent, { data: {} }); this.dialogRef.afterClosed().subscribe( data =&gt; console.log(&quot;Dialog output:&quot;, data) ); } constructor( private myDialog: MatDialog, ) { } ダイアログを閉じないでデータを送る ダイアログコンポーネント @Output() submitClicked = new EventEmitter&lt;any&gt;(); sendMessageToParent() { const data = &#39;Your data&#39;; this.submitClicked.emit(data); }"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="scribbling block" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">scribbling block</div>
+					<div class="logo__tagline">IT技術系調べ物のメモ</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/">
+				
+				<span class="menu__text">トップ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/categories/">
+				
+				<span class="menu__text">カテゴリー</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/tags/">
+				
+				<span class="menu__text">タグ</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">mat dialogから親コンポーネントにデータを送る</h1>
+			
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">目次</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#ダイアログを閉じたときにデータを送る">ダイアログを閉じたときにデータを送る</a></li>
+    <li><a href="#ダイアログを閉じないでデータを送る">ダイアログを閉じないでデータを送る</a></li>
+  </ul>
+</nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<h2 id="ダイアログを閉じたときにデータを送る">ダイアログを閉じたときにデータを送る</h2>
+<p>ダイアログコンポーネント</p>
+<pre><code>close() {
+
+    this.dialogRef.close(data);
+}
+
+
+constructor(
+    public dialogRef: MatDialogRef&lt;MyDialogComponent&gt;,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData
+  ) { }
+</code></pre><p>親コンポーネント</p>
+<pre><code>
+openDialog() {
+
+    this.dialogRef = this.myDialog.open(MyDialogComponent, {
+      data: {}
+    });
+
+    this.dialogRef.afterClosed().subscribe(
+        data =&gt; console.log(&quot;Dialog output:&quot;, data)
+    );    
+}
+
+constructor(
+    private myDialog: MatDialog,
+) { }
+
+</code></pre><h2 id="ダイアログを閉じないでデータを送る">ダイアログを閉じないでデータを送る</h2>
+<p>ダイアログコンポーネント</p>
+<pre><code>
+@Output() submitClicked = new EventEmitter&lt;any&gt;();
+
+sendMessageToParent() {
+    const data = 'Your data';
+    this.submitClicked.emit(data);
+}
+
+</code></pre><p>親コンポーネント</p>
+<pre><code>private dialogRef
+private dialogSubmitSubscription
+
+openDialog() {
+
+    this.dialogRef = this.myDialog.open(MyDialogComponent, {
+      data: {}
+    });
+
+    this.dialogSubmitSubscription = this.DialogRef.componentInstance.submitClicked
+    .subscribe(result =&gt; {
+      console.log('Got the data!', result);
+    });
+}
+
+closeDialog() {
+    this.dialogSubmitSubscription.unsubscribe();
+    this.dialogRef.close()
+}
+
+constructor(
+    private myDialog: MatDialog,
+) { }
+
+</code></pre>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/angular/" rel="tag">angular</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/docs/dealing_with_garbled_utf8_strings_in_mariadb_and_mysql/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
+			<p class="pager__title">MariaDB/Mysql on docker環境におけるutf8文字化け対策</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 wazatoki.
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマで生成されています。</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
