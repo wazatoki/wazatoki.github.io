@@ -6,7 +6,16 @@
     <description>Recent content in Docs on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 10 Oct 2021 10:07:00 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 01:53:33 +0000</lastBuildDate><atom:link href="http://wazatoki.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python_dependency_management_tool</title>
+      <link>http://wazatoki.github.io/docs/python_dependency_management_tool/</link>
+      <pubDate>Sun, 10 Oct 2021 01:53:33 +0000</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/python_dependency_management_tool/</guid>
+      <description>pipenv 新規プロジェクトでPipfileを元にして最新のモジュールをインストールしたい場合。 pipenv install 特定のモジュールをインストールしたい場合 pipenv install モジュール名称 既存のプロジェクトでモジュールを最新化したい場合 pipenv update 新規プロジェクトでPipfile.loc</description>
+    </item>
+    
     <item>
       <title>Git tips</title>
       <link>http://wazatoki.github.io/docs/git_tips/</link>
