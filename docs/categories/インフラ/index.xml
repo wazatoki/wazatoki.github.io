@@ -6,7 +6,16 @@
     <description>Recent content in インフラ on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 11 Jan 2021 16:51:14 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 10:07:00 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git tips</title>
+      <link>http://wazatoki.github.io/docs/git_tips/</link>
+      <pubDate>Sun, 10 Oct 2021 10:07:00 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/git_tips/</guid>
+      <description>originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名 サブモジュールを合わせてclone git clone --recursive クローンしたいリポジトリ サブモジュールのcl</description>
+    </item>
+    
     <item>
       <title>MariaDB/Mysql on docker環境におけるutf8文字化け対策</title>
       <link>http://wazatoki.github.io/docs/dealing_with_garbled_utf8_strings_in_mariadb_and_mysql/</link>
@@ -14,15 +23,6 @@
       
       <guid>http://wazatoki.github.io/docs/dealing_with_garbled_utf8_strings_in_mariadb_and_mysql/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Git tips</title>
-      <link>http://wazatoki.github.io/docs/git_tips/</link>
-      <pubDate>Sat, 09 Jan 2021 16:19:14 +0900</pubDate>
-      
-      <guid>http://wazatoki.github.io/docs/git_tips/</guid>
-      <description>originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名</description>
     </item>
     
   </channel>

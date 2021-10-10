@@ -8,25 +8,21 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 		<meta property="og:title" content="Git tips" />
-<meta property="og:description" content="originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名" />
+<meta property="og:description" content="originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名 サブモジュールを合わせてclone git clone --recursive クローンしたいリポジトリ サブモジュールのcl" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://wazatoki.github.io/docs/git_tips/" />
-<meta property="article:published_time" content="2021-01-09T16:19:14+09:00" />
-<meta property="article:modified_time" content="2021-01-09T16:19:14+09:00" />
+<meta property="og:url" content="http://wazatoki.github.io/docs/git_tips/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2021-10-10T10:07:00&#43;09:00" />
+<meta property="article:modified_time" content="2021-10-10T10:07:00&#43;09:00" />
+
 
 		<meta itemprop="name" content="Git tips">
-<meta itemprop="description" content="originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名">
-<meta itemprop="datePublished" content="2021-01-09T16:19:14+09:00" />
-<meta itemprop="dateModified" content="2021-01-09T16:19:14+09:00" />
-<meta itemprop="wordCount" content="78">
-
-
-
+<meta itemprop="description" content="originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名 サブモジュールを合わせてclone git clone --recursive クローンしたいリポジトリ サブモジュールのcl"><meta itemprop="datePublished" content="2021-10-10T10:07:00&#43;09:00" />
+<meta itemprop="dateModified" content="2021-10-10T10:07:00&#43;09:00" />
+<meta itemprop="wordCount" content="146">
 <meta itemprop="keywords" content="git," />
-
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Git tips"/>
-<meta name="twitter:description" content="originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名"/>
+<meta name="twitter:description" content="originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名 サブモジュールを合わせてclone git clone --recursive クローンしたいリポジトリ サブモジュールのcl"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -101,6 +97,8 @@
     <li><a href="#originを変更">originを変更</a></li>
     <li><a href="#リモートブランチ一覧">リモートブランチ一覧</a></li>
     <li><a href="#特定のリモートブランチをclone">特定のリモートブランチをclone</a></li>
+    <li><a href="#サブモジュールを合わせてclone">サブモジュールを合わせてclone</a></li>
+    <li><a href="#サブモジュールのcloneを忘れたときサブモジュールの更新">サブモジュールのcloneを忘れたとき（サブモジュールの更新）</a></li>
   </ul>
 </nav>
 	</div>
@@ -112,6 +110,12 @@
 <pre><code>git branch -r
 </code></pre><h2 id="特定のリモートブランチをclone">特定のリモートブランチをclone</h2>
 <pre><code>git clone origin/リモートブランチ名:ローカルブランチ名
+</code></pre><h2 id="サブモジュールを合わせてclone">サブモジュールを合わせてclone</h2>
+<pre><code>git clone --recursive クローンしたいリポジトリ
+
+</code></pre><h2 id="サブモジュールのcloneを忘れたときサブモジュールの更新">サブモジュールのcloneを忘れたとき（サブモジュールの更新）</h2>
+<pre><code>git submodule update --init --recursive
+
 </code></pre>
 		</div>
 		<footer class="post__footer">
@@ -131,15 +135,9 @@
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/docs/install_google_chrome_in_wsl2_ubuntu/" rel="prev">
+		<a class="pager__link" href="/docs/output_data_to_parent_from_angular_dialog/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;前の投稿</span>
-			<p class="pager__title">wls2内のubuntuにgoogle chromeをインストールする</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/docs/wifi_setting_on_raspberry_pi4b/" rel="next">
-			<span class="pager__subtitle">次の投稿&thinsp;»</span>
-			<p class="pager__title">Raspberry Pi 4B のWifi設定</p>
+			<p class="pager__title">mat dialogから親コンポーネントにデータを送る</p>
 		</a>
 	</div>
 </nav>

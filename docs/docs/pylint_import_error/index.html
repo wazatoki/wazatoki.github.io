@@ -10,20 +10,16 @@
 		<meta property="og:title" content="Pylint使用時のインポートエラー対策" />
 <meta property="og:description" content="visual studio codeのpythonプラグインでpylintを使用した時に表示されたimportエラーの対応記録。 workspace.code-workspace に設定記載 &quot;settings&quot;: { &quot;python.linting.pylintPath&quot;: &quot;{path to pylint}&quot;, &quot;python.pipenvPath&quot;: &quot;{path to pipenv}&quot;, &quot;python.pythonPath&quot;: &quot;{path to python}&quot; } pylintrcの設定 pylintrcの生成 $&gt;pylint --generate-rcfile &gt; pylintrc 生成したpylintrcを編集 init-hook=&#39;import sys; sys.path.append(&quot;path to project root" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://wazatoki.github.io/docs/pylint_import_error/" />
-<meta property="article:published_time" content="2021-01-02T19:00:48+09:00" />
-<meta property="article:modified_time" content="2021-01-02T19:00:48+09:00" />
+<meta property="og:url" content="http://wazatoki.github.io/docs/pylint_import_error/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2021-01-02T19:00:48&#43;09:00" />
+<meta property="article:modified_time" content="2021-01-02T19:00:48&#43;09:00" />
+
 
 		<meta itemprop="name" content="Pylint使用時のインポートエラー対策">
-<meta itemprop="description" content="visual studio codeのpythonプラグインでpylintを使用した時に表示されたimportエラーの対応記録。 workspace.code-workspace に設定記載 &quot;settings&quot;: { &quot;python.linting.pylintPath&quot;: &quot;{path to pylint}&quot;, &quot;python.pipenvPath&quot;: &quot;{path to pipenv}&quot;, &quot;python.pythonPath&quot;: &quot;{path to python}&quot; } pylintrcの設定 pylintrcの生成 $&gt;pylint --generate-rcfile &gt; pylintrc 生成したpylintrcを編集 init-hook=&#39;import sys; sys.path.append(&quot;path to project root">
-<meta itemprop="datePublished" content="2021-01-02T19:00:48+09:00" />
-<meta itemprop="dateModified" content="2021-01-02T19:00:48+09:00" />
+<meta itemprop="description" content="visual studio codeのpythonプラグインでpylintを使用した時に表示されたimportエラーの対応記録。 workspace.code-workspace に設定記載 &quot;settings&quot;: { &quot;python.linting.pylintPath&quot;: &quot;{path to pylint}&quot;, &quot;python.pipenvPath&quot;: &quot;{path to pipenv}&quot;, &quot;python.pythonPath&quot;: &quot;{path to python}&quot; } pylintrcの設定 pylintrcの生成 $&gt;pylint --generate-rcfile &gt; pylintrc 生成したpylintrcを編集 init-hook=&#39;import sys; sys.path.append(&quot;path to project root"><meta itemprop="datePublished" content="2021-01-02T19:00:48&#43;09:00" />
+<meta itemprop="dateModified" content="2021-01-02T19:00:48&#43;09:00" />
 <meta itemprop="wordCount" content="121">
-
-
-
 <meta itemprop="keywords" content="python,visual studio code," />
-
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Pylint使用時のインポートエラー対策"/>
 <meta name="twitter:description" content="visual studio codeのpythonプラグインでpylintを使用した時に表示されたimportエラーの対応記録。 workspace.code-workspace に設定記載 &quot;settings&quot;: { &quot;python.linting.pylintPath&quot;: &quot;{path to pylint}&quot;, &quot;python.pipenvPath&quot;: &quot;{path to pipenv}&quot;, &quot;python.pythonPath&quot;: &quot;{path to python}&quot; } pylintrcの設定 pylintrcの生成 $&gt;pylint --generate-rcfile &gt; pylintrc 生成したpylintrcを編集 init-hook=&#39;import sys; sys.path.append(&quot;path to project root"/>

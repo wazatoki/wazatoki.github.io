@@ -6,14 +6,14 @@
     <description>Recent content in git on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sat, 09 Jan 2021 16:19:14 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 10:07:00 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git tips</title>
       <link>http://wazatoki.github.io/docs/git_tips/</link>
-      <pubDate>Sat, 09 Jan 2021 16:19:14 +0900</pubDate>
+      <pubDate>Sun, 10 Oct 2021 10:07:00 +0900</pubDate>
       
       <guid>http://wazatoki.github.io/docs/git_tips/</guid>
-      <description>originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名</description>
+      <description>originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名 サブモジュールを合わせてclone git clone --recursive クローンしたいリポジトリ サブモジュールのcl</description>
     </item>
     
   </channel>

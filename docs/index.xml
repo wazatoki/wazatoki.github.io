@@ -6,7 +6,16 @@
     <description>Recent content on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 23 Sep 2021 16:37:35 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Oct 2021 10:07:00 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git tips</title>
+      <link>http://wazatoki.github.io/docs/git_tips/</link>
+      <pubDate>Sun, 10 Oct 2021 10:07:00 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/git_tips/</guid>
+      <description>originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名 サブモジュールを合わせてclone git clone --recursive クローンしたいリポジトリ サブモジュールのcl</description>
+    </item>
+    
     <item>
       <title>mat dialogから親コンポーネントにデータを送る</title>
       <link>http://wazatoki.github.io/docs/output_data_to_parent_from_angular_dialog/</link>
@@ -32,15 +41,6 @@
       
       <guid>http://wazatoki.github.io/docs/wifi_setting_on_raspberry_pi4b/</guid>
       <description>wifi 設定 /etc/wpa_supplicant/wpa_supplicant.confにESSIDとwpaキーを設定する。 network={ ssid=&amp;quot;oooo&amp;quot; # ESSID psk=&amp;quot;xxxxxxxxx&amp;quot; # 暗号化キー group=CCMP key_mgmt=WPA-PSK # 暗号化キーの管理方式 priority=2 # 複数のnetworkブロックが定義されている場合の優先順位（大きいほ</description>
-    </item>
-    
-    <item>
-      <title>Git tips</title>
-      <link>http://wazatoki.github.io/docs/git_tips/</link>
-      <pubDate>Sat, 09 Jan 2021 16:19:14 +0900</pubDate>
-      
-      <guid>http://wazatoki.github.io/docs/git_tips/</guid>
-      <description>originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名</description>
     </item>
     
     <item>
