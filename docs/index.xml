@@ -35,15 +35,6 @@
     </item>
     
     <item>
-      <title>MariaDB/Mysql on docker環境におけるutf8文字化け対策</title>
-      <link>http://wazatoki.github.io/docs/dealing_with_garbled_utf8_strings_in_mariadb_and_mysql/</link>
-      <pubDate>Mon, 11 Jan 2021 16:51:14 +0900</pubDate>
-      
-      <guid>http://wazatoki.github.io/docs/dealing_with_garbled_utf8_strings_in_mariadb_and_mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Raspberry Pi 4B のWifi設定</title>
       <link>http://wazatoki.github.io/docs/wifi_setting_on_raspberry_pi4b/</link>
       <pubDate>Sun, 10 Jan 2021 17:21:45 +0900</pubDate>
