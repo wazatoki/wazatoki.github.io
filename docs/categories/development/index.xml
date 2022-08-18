@@ -6,7 +6,16 @@
     <description>Recent content in development on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 17 Aug 2022 23:48:24 +0000</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Aug 2022 09:07:24 +0000</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>keyupとkeydownとkeypressの違い</title>
+      <link>http://wazatoki.github.io/docs/difference_between_keyup_keydown_and_keypress/</link>
+      <pubDate>Thu, 18 Aug 2022 09:07:24 +0000</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/difference_between_keyup_keydown_and_keypress/</guid>
+      <description>発火する順番は、keyDown → keyPress → keyUp keydownとkeyupは、全てのキーに対応するが、keypressはシフトキーなど文字でない入力は反応しない。 keyPressは機能が削除される予定の為、非推奨。 mdn web docs: Element: keypress イベント</description>
+    </item>
+    
     <item>
       <title>Element PlusのSelect Box OptionsがモーダルダイアログのOverlayの後ろに隠れる</title>
       <link>http://wazatoki.github.io/docs/element-plus-select-box-options-hide-behind-dialog-overlay/</link>

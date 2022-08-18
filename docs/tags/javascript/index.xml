@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on scribbling block</title>
+    <link>http://wazatoki.github.io/tags/javascript/</link>
+    <description>Recent content in javascript on scribbling block</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Thu, 18 Aug 2022 09:07:24 +0000</lastBuildDate><atom:link href="http://wazatoki.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>keyupとkeydownとkeypressの違い</title>
+      <link>http://wazatoki.github.io/docs/difference_between_keyup_keydown_and_keypress/</link>
+      <pubDate>Thu, 18 Aug 2022 09:07:24 +0000</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/difference_between_keyup_keydown_and_keypress/</guid>
+      <description>発火する順番は、keyDown → keyPress → keyUp keydownとkeyupは、全てのキーに対応するが、keypressはシフトキーなど文字でない入力は反応しない。 keyPressは機能が削除される予定の為、非推奨。 mdn web docs: Element: keypress イベント</description>
+    </item>
+    
+  </channel>
+</rss>

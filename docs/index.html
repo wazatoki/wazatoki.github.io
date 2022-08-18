@@ -84,6 +84,18 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h2 class="list__title post__title">
+			<a href="/docs/difference_between_keyup_keydown_and_keypress/" rel="bookmark">
+			keyupとkeydownとkeypressの違い
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		発火する順番は、keyDown → keyPress → keyUp keydownとkeyupは、全てのキーに対応するが、keypressはシフトキーなど文字でない入力は反応しない。 keyPressは機能が削除される予定の為、非推奨。 mdn web docs: Element: keypress イベント
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h2 class="list__title post__title">
 			<a href="/docs/element-plus-select-box-options-hide-behind-dialog-overlay/" rel="bookmark">
 			Element PlusのSelect Box OptionsがモーダルダイアログのOverlayの後ろに隠れる
 			</a>
@@ -210,21 +222,6 @@
 	<div class="content list__excerpt post__content clearfix">
 		hugo server -Dで開発サーバーを起動するとlocalhost外からアクセスできない。 $&gt;hugo server --baseURL=&quot;192.168.0.1&quot; --bind=&quot;192.168.0.1&quot; --port=8080 で起動するとhttp://192.168.0.1:8080でアクセスできる。
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/docs/pylint_import_error/" rel="bookmark">
-			Pylint使用時のインポートエラー対策
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		visual studio codeのpythonプラグインでpylintを使用した時に表示されたimportエラーの対応記録。 workspace.code-workspace に設定記載 &quot;settings&quot;: { &quot;python.linting.pylintPath&quot;: &quot;{path to pylint}&quot;, &quot;python.pipenvPath&quot;: &quot;{path to pipenv}&quot;, &quot;python.pythonPath&quot;: &quot;{path to python}&quot; } pylintrcの設定 pylintrcの生成 $&gt;pylint --generate-rcfile &gt; pylintrc 生成したpylintrcを編集 init-hook='import sys; sys.path.append(&quot;path to project root
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/docs/pylint_import_error/">続きを読む…</a>
-	</div>
 </article>
 </main>
 
@@ -239,11 +236,11 @@
 	<h4 class="widget__title">最近の投稿</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/docs/difference_between_keyup_keydown_and_keypress/">keyupとkeydownとkeypressの違い</a></li>
 			<li class="widget__item"><a class="widget__link" href="/docs/element-plus-select-box-options-hide-behind-dialog-overlay/">Element PlusのSelect Box OptionsがモーダルダイアログのOverlayの後ろに隠れる</a></li>
 			<li class="widget__item"><a class="widget__link" href="/docs/python_dependency_management_tool/">Python_dependency_management_tool</a></li>
 			<li class="widget__item"><a class="widget__link" href="/docs/git_tips/">Git tips</a></li>
 			<li class="widget__item"><a class="widget__link" href="/docs/output_data_to_parent_from_angular_dialog/">mat dialogから親コンポーネントにデータを送る</a></li>
-			<li class="widget__item"><a class="widget__link" href="/docs/dealing_with_garbled_utf8_strings_in_mariadb_and_mysql/">MariaDB/Mysql on docker環境におけるutf8文字化け対策</a></li>
 		</ul>
 	</div>
 </div>
@@ -277,6 +274,7 @@
 		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="git">git (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/google-chrome/" title="google chrome">google chrome (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/javascript/" title="javascript">javascript (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/mariadb/" title="mariadb">mariadb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/mysql/" title="mysql">mysql (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ntp/" title="ntp">ntp (1)</a>
