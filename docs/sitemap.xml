@@ -3,24 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://wazatoki.github.io/categories/</loc>
-    <lastmod>2021-10-10T01:53:33+00:00</lastmod>
+    <lastmod>2022-08-17T23:48:24+00:00</lastmod>
   </url><url>
     <loc>http://wazatoki.github.io/categories/development/</loc>
-    <lastmod>2021-10-10T01:53:33+00:00</lastmod>
+    <lastmod>2022-08-17T23:48:24+00:00</lastmod>
   </url><url>
     <loc>http://wazatoki.github.io/docs/</loc>
-    <lastmod>2021-10-10T01:53:33+00:00</lastmod>
+    <lastmod>2022-08-17T23:48:24+00:00</lastmod>
+  </url><url>
+    <loc>http://wazatoki.github.io/docs/element-plus-select-box-options-hide-behind-dialog-overlay/</loc>
+    <lastmod>2022-08-17T23:48:24+00:00</lastmod>
+  </url><url>
+    <loc>http://wazatoki.github.io/tags/element-plus/</loc>
+    <lastmod>2022-08-17T23:48:24+00:00</lastmod>
+  </url><url>
+    <loc>http://wazatoki.github.io/</loc>
+    <lastmod>2022-08-17T23:48:24+00:00</lastmod>
+  </url><url>
+    <loc>http://wazatoki.github.io/tags/</loc>
+    <lastmod>2022-08-17T23:48:24+00:00</lastmod>
+  </url><url>
+    <loc>http://wazatoki.github.io/tags/vue3/</loc>
+    <lastmod>2022-08-17T23:48:24+00:00</lastmod>
   </url><url>
     <loc>http://wazatoki.github.io/tags/python/</loc>
     <lastmod>2021-10-10T01:53:33+00:00</lastmod>
   </url><url>
     <loc>http://wazatoki.github.io/docs/python_dependency_management_tool/</loc>
-    <lastmod>2021-10-10T01:53:33+00:00</lastmod>
-  </url><url>
-    <loc>http://wazatoki.github.io/</loc>
-    <lastmod>2021-10-10T01:53:33+00:00</lastmod>
-  </url><url>
-    <loc>http://wazatoki.github.io/tags/</loc>
     <lastmod>2021-10-10T01:53:33+00:00</lastmod>
   </url><url>
     <loc>http://wazatoki.github.io/tags/git/</loc>
@@ -37,6 +46,15 @@
   </url><url>
     <loc>http://wazatoki.github.io/docs/output_data_to_parent_from_angular_dialog/</loc>
     <lastmod>2021-09-23T16:37:35+09:00</lastmod>
+  </url><url>
+    <loc>http://wazatoki.github.io/tags/mariadb/</loc>
+    <lastmod>2021-01-11T16:51:14+09:00</lastmod>
+  </url><url>
+    <loc>http://wazatoki.github.io/docs/dealing_with_garbled_utf8_strings_in_mariadb_and_mysql/</loc>
+    <lastmod>2021-01-11T16:51:14+09:00</lastmod>
+  </url><url>
+    <loc>http://wazatoki.github.io/tags/mysql/</loc>
+    <lastmod>2021-01-11T16:51:14+09:00</lastmod>
   </url><url>
     <loc>http://wazatoki.github.io/tags/raspberry-pi/</loc>
     <lastmod>2021-01-10T17:21:45+09:00</lastmod>

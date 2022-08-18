@@ -4,19 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>angular - scribbling block</title>
+	<title>Docs - scribbling block</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="angular" />
+		<meta property="og:title" content="Docs" />
 <meta property="og:description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://wazatoki.github.io/tags/angular/" />
+<meta property="og:url" content="http://wazatoki.github.io/docs/" />
 
 
-		<meta itemprop="name" content="angular">
+		<meta itemprop="name" content="Docs">
 <meta itemprop="description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。">
 		<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="angular"/>
+<meta name="twitter:title" content="Docs"/>
 <meta name="twitter:description" content="WEB系技術について調べたことをまとめています。主に pythonやgo、frontendはangular,vuejsについて。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
 
 	<link rel="stylesheet" href="/css/style.css">
 	
-	<link rel="alternate" type="application/rss+xml" href="/tags/angular/index.xml" title="scribbling block">
+	<link rel="alternate" type="application/rss+xml" href="/docs/index.xml" title="scribbling block">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
@@ -81,40 +81,29 @@
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">angular</h1>
+		<h1 class="main__title">Docs</h1>
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			<a href="/docs/output_data_to_parent_from_angular_dialog/" rel="bookmark">
-			mat dialogから親コンポーネントにデータを送る
+			<a href="/docs/create_enviroment_windows10_python_embeded_vscode/" rel="bookmark">
+			windows10 &#43; python embeded &#43; visual studio code 環境作成
 			</a>
 		</h2>
 		
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		ダイアログを閉じたときにデータを送る ダイアログコンポーネント close() { this.dialogRef.close(data); } constructor( public dialogRef: MatDialogRef&lt;MyDialogComponent&gt;, @Inject(MAT_DIALOG_DATA) public data: DialogData ) { } 親コンポーネント openDialog() { this.dialogRef = this.myDialog.open(MyDialogComponent, { data: {} }); this.dialogRef.afterClosed().subscribe( data =&gt; console.log(&quot;Dialog output:&quot;, data) ); } constructor( private myDialog: MatDialog, ) { } ダイアログを閉じないでデータを送る ダイアログコンポーネント @Output() submitClicked = new EventEmitter&lt;any&gt;(); sendMessageToParent() { const data = 'Your data'; this.submitClicked.emit(data); }
+		配布用にpython embededを利用することを想定して開発環境を作成した際、調べたことの記録です。 ダウンロード 下記のサイトよりダウンロードして適当なフォルダに展開します。 https://www.python.org/downloads/windows/ pipのインストール 下記のサイトよりget-pip.pyをダウン
 	</div>
 	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/docs/output_data_to_parent_from_angular_dialog/">続きを読む…</a>
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/docs/install_google_chrome_in_wsl2_ubuntu/" rel="bookmark">
-			wls2内のubuntuにgoogle chromeをインストールする
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		google chromeのインストール sudo apt-get update sudo apt-get install libappindicator1 libappindicator3-1 fonts-liberation curl -O https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb sudo dpkg -i google-chrome-stable_current_amd64.deb # ここで依存関係のエラーが出るので依存をfixする sudo apt --fix-broken install # もう一度インストール sudo dpkg -i google-chrome-stable_current_amd64.deb angularでユニットテストを行う時の設定 karuma.conf.js browsers: ['Chrome'], customLaunchers: { ChromeHeadlessCI: { base: 'ChromeHeadless', flags: ['--no-sandbox'] } }, テストを実行するときは
-	</div>
-	<div class="list__footer clearfix">
-		<a class="list__footer-readmore btn" href="/docs/install_google_chrome_in_wsl2_ubuntu/">続きを読む…</a>
+		<a class="list__footer-readmore btn" href="/docs/create_enviroment_windows10_python_embeded_vscode/">続きを読む…</a>
 	</div>
 </article>
 </main>
 
+<div class="pagination">
+	<a class="pagination__item pagination__item--prev btn" href="/docs/">«</a>
+	<span class="pagination__item pagination__item--current">2/2</span>
+</div>
 
 			</div>
 			

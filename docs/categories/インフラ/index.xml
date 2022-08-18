@@ -16,5 +16,14 @@
       <description>originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名 サブモジュールを合わせてclone git clone --recursive クローンしたいリポジトリ サブモジュールのcl</description>
     </item>
     
+    <item>
+      <title>MariaDB/Mysql on docker環境におけるutf8文字化け対策</title>
+      <link>http://wazatoki.github.io/docs/dealing_with_garbled_utf8_strings_in_mariadb_and_mysql/</link>
+      <pubDate>Mon, 11 Jan 2021 16:51:14 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/dealing_with_garbled_utf8_strings_in_mariadb_and_mysql/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
