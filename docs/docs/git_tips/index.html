@@ -18,7 +18,7 @@
 		<meta itemprop="name" content="Git tips">
 <meta itemprop="description" content="originを変更 git remote set-url origin 変更先のurl リモートブランチ一覧 git branch -r 特定のリモートブランチをclone git clone origin/リモートブランチ名:ローカルブランチ名 サブモジュールを合わせてclone git clone --recursive クローンしたいリポジトリ サブモジュールのcl"><meta itemprop="datePublished" content="2021-10-10T10:07:00&#43;09:00" />
 <meta itemprop="dateModified" content="2021-10-10T10:07:00&#43;09:00" />
-<meta itemprop="wordCount" content="146">
+<meta itemprop="wordCount" content="237">
 <meta itemprop="keywords" content="git," />
 		<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Git tips"/>
@@ -99,6 +99,7 @@
     <li><a href="#特定のリモートブランチをclone">特定のリモートブランチをclone</a></li>
     <li><a href="#サブモジュールを合わせてclone">サブモジュールを合わせてclone</a></li>
     <li><a href="#サブモジュールのcloneを忘れたときサブモジュールの更新">サブモジュールのcloneを忘れたとき（サブモジュールの更新）</a></li>
+    <li><a href="#supsupキャレットとsupsupチルダの違い"><sup>^</sup>（キャレット）と<sup>~</sup>（チルダ）の違い</a></li>
   </ul>
 </nav>
 	</div>
@@ -116,7 +117,11 @@
 </code></pre><h2 id="サブモジュールのcloneを忘れたときサブモジュールの更新">サブモジュールのcloneを忘れたとき（サブモジュールの更新）</h2>
 <pre><code>git submodule update --init --recursive
 
-</code></pre>
+</code></pre><h2 id="supsupキャレットとsupsupチルダの違い"><sup>^</sup>（キャレット）と<sup>~</sup>（チルダ）の違い</h2>
+<p><sup>^</sup>は複数ある親コミットのなかからコミットを指定できる。</p>
+<p><sup>~</sup>は~世代前のコミットを指定できる。</p>
+<p><a href="https://qiita.com/chihiro/items/d551c14cb9764454e0b9">【やっとわかった！】gitのHEAD^とHEAD~の違い</a></p>
+
 		</div>
 		<footer class="post__footer">
 			
