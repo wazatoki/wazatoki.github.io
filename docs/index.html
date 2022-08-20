@@ -84,6 +84,18 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h2 class="list__title post__title">
+			<a href="/docs/cd_on_docker_exec/" rel="bookmark">
+			docker execでcd
+			</a>
+		</h2>
+		
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		docker execでディレクトリを移動したのちに何かの処理を行いたい場合 docker exec [コンテナ名] /bin/sh -c &quot;cd foo/bar &amp;&amp; npm run build&quot;
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h2 class="list__title post__title">
 			<a href="/docs/difference_between_keyup_keydown_and_keypress/" rel="bookmark">
 			keyupとkeydownとkeypressの違い
 			</a>
@@ -210,18 +222,6 @@
 	<div class="list__footer clearfix">
 		<a class="list__footer-readmore btn" href="/docs/setting_the_time_on_raspberry_pi_using_ntp/">続きを読む…</a>
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/docs/access_hugo_server_from_out_of_localhost/" rel="bookmark">
-			hugo開発サーバーへlocalhost外からのアクセス
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		hugo server -Dで開発サーバーを起動するとlocalhost外からアクセスできない。 $&gt;hugo server --baseURL=&quot;192.168.0.1&quot; --bind=&quot;192.168.0.1&quot; --port=8080 で起動するとhttp://192.168.0.1:8080でアクセスできる。
-	</div>
 </article>
 </main>
 
@@ -236,11 +236,11 @@
 	<h4 class="widget__title">最近の投稿</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/docs/cd_on_docker_exec/">docker execでcd</a></li>
 			<li class="widget__item"><a class="widget__link" href="/docs/difference_between_keyup_keydown_and_keypress/">keyupとkeydownとkeypressの違い</a></li>
 			<li class="widget__item"><a class="widget__link" href="/docs/element-plus-select-box-options-hide-behind-dialog-overlay/">Element PlusのSelect Box OptionsがモーダルダイアログのOverlayの後ろに隠れる</a></li>
 			<li class="widget__item"><a class="widget__link" href="/docs/python_dependency_management_tool/">Python_dependency_management_tool</a></li>
 			<li class="widget__item"><a class="widget__link" href="/docs/git_tips/">Git tips</a></li>
-			<li class="widget__item"><a class="widget__link" href="/docs/output_data_to_parent_from_angular_dialog/">mat dialogから親コンポーネントにデータを送る</a></li>
 		</ul>
 	</div>
 </div>
@@ -270,6 +270,7 @@
 	<h4 class="widget__title">タグ</h4>
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/angular/" title="angular">angular (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/docker/" title="docker">docker (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/element-plus/" title="element-plus">element-plus (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="git">git (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/google-chrome/" title="google chrome">google chrome (1)</a>

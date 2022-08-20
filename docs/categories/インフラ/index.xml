@@ -6,7 +6,16 @@
     <description>Recent content in インフラ on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 10 Oct 2021 10:07:00 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Aug 2022 18:55:00 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/categories/%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker execでcd</title>
+      <link>http://wazatoki.github.io/docs/cd_on_docker_exec/</link>
+      <pubDate>Sat, 20 Aug 2022 18:55:00 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/cd_on_docker_exec/</guid>
+      <description>docker execでディレクトリを移動したのちに何かの処理を行いたい場合 docker exec [コンテナ名] /bin/sh -c &amp;quot;cd foo/bar &amp;amp;&amp;amp; npm run build&amp;quot;</description>
+    </item>
+    
     <item>
       <title>Git tips</title>
       <link>http://wazatoki.github.io/docs/git_tips/</link>

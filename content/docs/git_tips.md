@@ -1,6 +1,7 @@
 ---
 title: "Git tips"
 date: 2021-10-10T10:07:00+09:00
+lastmod: 2022-08-20T08:20:00+09:00
 draft: false
 sidebar: false
 categories:

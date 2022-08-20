@@ -6,7 +6,16 @@
     <description>Recent content in Docs on scribbling block</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 18 Aug 2022 09:07:24 +0000</lastBuildDate><atom:link href="http://wazatoki.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Aug 2022 18:55:00 +0900</lastBuildDate><atom:link href="http://wazatoki.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker execでcd</title>
+      <link>http://wazatoki.github.io/docs/cd_on_docker_exec/</link>
+      <pubDate>Sat, 20 Aug 2022 18:55:00 +0900</pubDate>
+      
+      <guid>http://wazatoki.github.io/docs/cd_on_docker_exec/</guid>
+      <description>docker execでディレクトリを移動したのちに何かの処理を行いたい場合 docker exec [コンテナ名] /bin/sh -c &amp;quot;cd foo/bar &amp;amp;&amp;amp; npm run build&amp;quot;</description>
+    </item>
+    
     <item>
       <title>keyupとkeydownとkeypressの違い</title>
       <link>http://wazatoki.github.io/docs/difference_between_keyup_keydown_and_keypress/</link>
